@@ -21,7 +21,7 @@
         android:contentDescription="@string/welcomescreenbg" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/swooshimage2"
         android:layout_width="127dp"
         android:layout_height="35dp"
         android:layout_marginTop="24dp"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/swooshimage2"
         tools:text="@string/go_all_in" />
 
     <TextView

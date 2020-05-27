@@ -13,5 +13,18 @@
     <string name="on_going_all_out">ON GOING ALL OUT</string>
     <string name="get_started">Get Started</string>
     <string name="find_a_team_in_your_city_and_dominate_the_league">Find a team in your city and dominate the league</string>
+    <string name="title_activity_skill">SkillActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="beginner">Beginner</string>
+    <string name="advanced">Advanced</string>
+    <string name="i_am_a">I am a:</string>
+    <string name="finish">Finish</string>
 
 </resources>
