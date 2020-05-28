@@ -47,33 +47,36 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/beginnerLevelBtn"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="beginnerLevelBtnClicked"
             android:text="@string/beginner"
             android:textColor="@android:color/white"
             android:textOff="@string/beginner"
             android:textOn="@string/beginner"
-            android:textStyle="bold"
-            android:layout_marginEnd="15dp" />
+            android:textStyle="bold" />
 
         <ToggleButton
+            android:id="@+id/advancedLevelBtn"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="advancedLevelBtnClicked"
             android:text="@string/advanced"
             android:textColor="@android:color/white"
             android:textOff="@string/advanced"
             android:textOn="@string/advanced"
-            android:textStyle="bold"
-            android:layout_marginStart="15dp" />
+            android:textStyle="bold" />
     </LinearLayout>
 
     <TextView
@@ -91,12 +94,13 @@
         app:layout_constraintTop_toBottomOf="@+id/swooshimage2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/finishLevelBtn"
         android:layout_width="310dp"
         android:layout_height="68dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="finishLevelBtnClicked"
         android:text="@string/finish"
         android:textColor="@android:color/white"
         android:textStyle="bold"
