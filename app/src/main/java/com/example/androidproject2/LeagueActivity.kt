@@ -5,13 +5,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.androidproject2.Model.Player
 import kotlinx.android.synthetic.main.activity_league.*
 
 /*import kotlinx.android.synthetic.main.activity_league.**/
 
 class LeagueActivity : BaseActivity() {
 
-    var SelectedLeague = ""
+    //var SelectedLeague = ""
+    var player = Player("","")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
@@ -31,7 +34,8 @@ class LeagueActivity : BaseActivity() {
 
     fun mensLeagueBtnClicked(view: View){
 
-        SelectedLeague ="Mens"
+       // SelectedLeague ="Mens"
+        player.league="Mens"
         womensLeagueBtn.isChecked = false
         coedLeagueBtn.isChecked = false
 
@@ -44,7 +48,7 @@ class LeagueActivity : BaseActivity() {
 
         mensLeagueBtn.isChecked = false
         coedLeagueBtn.isChecked = false
-        SelectedLeague ="Womens"
+        player.league ="Womens"
 
 
     }
@@ -54,15 +58,17 @@ class LeagueActivity : BaseActivity() {
 
         mensLeagueBtn.isChecked = false
         womensLeagueBtn.isChecked = false
-        SelectedLeague ="Co-ed"
+        player.league ="Co-ed"
 
     }
 
 
     fun nextBtnClicked(view: View) {
-        if(SelectedLeague != ""){
+        if(player.league != ""){
             val intent2 = Intent(this,LevelActivity::class.java)
-            intent2.putExtra(EXTRA_LEAGUE,SelectedLeague)
+           // intent2.putExtra(EXTRA_LEAGUE,SelectedLeague)
+            //intent2.putExtra(EXTRA_LEAGUE,player)
+            intent2.putExtra(EXTRA_PLAYER,player)
             startActivity(intent2)
 
         }else{
